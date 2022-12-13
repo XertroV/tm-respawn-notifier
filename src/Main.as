@@ -62,7 +62,7 @@ void CheckForRespawns() {
 
 void OnRespawn(MLFeed::PlayerCpInfo_V2@ player) {
     // if (!S_SendRespawnNotifications) return;
-    UI::ShowNotification("Respawn: " + player.name, "Time lost to respawns: " + Time::Format(player.TimeLostToRespawns, true, false) + "\nNb Respawns: " + player.NbRespawnsRequested, vec4(.8, .3, .8, .3));
+    UI::ShowNotification("Respawn: " + player.name, "Time lost to respawns: " + Time::Format(player.TimeLostToRespawns, true, false) + "\nNb Respawns: " + player.NbRespawnsRequested, S_NotificationColor, int(S_NotificationDuration * 1000));
 }
 
 void Notify(const string &in msg) {
