@@ -1,8 +1,8 @@
 [meta]
-name     = "Players' PBs"
+name     = "Respawn Notifier"
 author   = "XertroV"
-category = "Race"
-version  = "0.1.9"
+category = "MLHook"
+version  = "0.1.-1"
 
 [script]
 #__DEFINES__
